@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 System Reboot | Shubham Jana</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { background: #0a0a0a; font-family: 'Fira Code', monospace; overflow: hidden; margin: 0; }
+        #fireworks { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; }
+        #terminal-container { position: relative; z-index: 50; width: 100%; max-width: 650px; padding: 20px; }
+        .terminal-window { border: 1px solid #30363d; background: #0d1117; box-shadow: 0 20px 50px rgba(0,0,0,0.9); }
+        .glitch { animation: glitch 0.2s ease infinite; }
+        @keyframes glitch { 
+            0% { transform: translate(0); }
+            50% { transform: translate(-3px, 2px); filter: hue-rotate(90deg); }
+            100% { transform: translate(3px, -2px); }
+        }
+        .resource-link { transition: all 0.3s ease; border: 1px solid #30363d; }
+        .resource-link:hover { border-color: #238636; background: #161b22; transform: translateY(-2px); }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen">
+
+    <canvas id="fireworks"></canvas>
+
+    <div id="terminal-container">
+        <div id="terminal" class="terminal-window rounded-lg overflow-hidden transition-all duration-500">
+            <div class="bg-[#161b22] p-3 flex items-center justify-between border-b border-[#30363d]">
+                <div class="flex gap-2">
+                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                </div>
+                <span class="text-[10px] text-gray-500 font-bold tracking-widest uppercase">session: shubham_jana_2026</span>
+            </div>
+
+            <div class="p-6 text-[#c9d1d9] text-sm md:text-base min-h-[400px]" id="output">
+                <div id="init-text">
+                    <p class="mb-2 text-green-400">>> status_check --current-year</p>
+                    <p class="mb-4 text-gray-400 font-bold">DATE: DEC 31, 2025</p>
+                    <p class="mb-4">Environmental scan: Complete. <br>All 2025 logs archived. Ready for system-wide upgrade.</p>
+                    <p class="mb-8 text-yellow-400 font-bold">>> ACTION REQUIRED: Global Init 2026</p>
+                    
+                    <button onclick="rebootSystem()" id="reboot-btn" class="bg-[#238636] hover:bg-[#2ea043] text-white font-black py-4 px-10 rounded-md transition-all active:scale-95 shadow-[0_0_20px_rgba(35,134,54,0.3)]">
+                        BOOT_SYSTEM_2026.exe
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-[#161b22] p-4 flex flex-wrap items-center justify-center gap-6 border-t border-[#30363d] text-[10px] font-bold">
+                <span class="text-gray-500 uppercase tracking-tighter">System Architect:</span>
+                <a href="https://github.com/Shubham-Jana-Dev" target="_blank" class="text-gray-400 hover:text-white flex items-center gap-1 transition-colors">
+                    <span>GITHUB</span>
+                </a>
+                <a href="https://linkedin.com/in/shubham-jana-3b650628a" target="_blank" class="text-blue-400 hover:text-blue-300 flex items-center gap-1 transition-colors">
+                    <span>LINKEDIN</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
