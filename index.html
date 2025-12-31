@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Jana | Social Greeting Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { background: #0d1117; font-family: 'Fira Code', monospace; color: #c9d1d9; }
+        .project-card { 
+            background: #161b22; 
+            border: 1px solid #30363d; 
+            transition: all 0.3s ease; 
+        }
+        .project-card:hover { 
+            border-color: #58a6ff; 
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen p-6">
+
+    <header class="text-center mb-12">
+        <h1 class="text-4xl font-black text-white mb-2">Social Greeting Hub</h1>
+        <p class="text-gray-500">A collection of interactive developer experiences by Shubham Jana</p>
+    </header>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl">
+        
+        <a href="christmas-2024/index.html" class="project-card p-8 rounded-2xl group">
+            <div class="text-4xl mb-4 group-hover:scale-110 transition-transform">🎁</div>
+            <h2 class="text-xl font-bold text-white mb-2">A Developer's Gift</h2>
+            <p class="text-sm text-gray-400 mb-6">Interactive 3D gift box with developer-themed luck tokens and lo-fi beats.</p>
+            <span class="text-blue-400 text-xs font-bold uppercase tracking-widest">Launch App →</span>
+        </a>
+
+        <a href="new-year-2026/index.html" class="project-card p-8 rounded-2xl group">
+            <div class="text-4xl mb-4 group-hover:scale-110 transition-transform">🎆</div>
+            <h2 class="text-xl font-bold text-white mb-2">2026 System Reboot</h2>
+            <p class="text-sm text-gray-400 mb-6">Terminal-based New Year experience with Canvas fireworks and tech archetypes.</p>
+            <span class="text-green-400 text-xs font-bold uppercase tracking-widest">Launch App →</span>
+        </a>
+
+    </div>
+
+    <footer class="mt-16 pt-8 border-t border-[#30363d] w-full max-w-4xl flex justify-between items-center text-[10px] font-bold text-gray-500">
+        <div>© 2025 SHUBHAM JANA</div>
+        <div class="flex gap-4">
+            <a href="https://github.com/Shubham-Jana-Dev" class="hover:text-white">GITHUB</a>
+            <a href="https://linkedin.com/in/shubham-jana-3b650628a" class="hover:text-white">LINKEDIN</a>
+        </div>
+    </footer>
+
+</body>
+</html>
