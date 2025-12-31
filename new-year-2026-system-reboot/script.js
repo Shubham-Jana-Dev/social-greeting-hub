@@ -44,7 +44,7 @@ function rebootSystem() {
             const res = archetypes[Math.floor(Math.random() * archetypes.length)];
             output.innerHTML = `
                 <div class="text-center mb-6">
-                    <h2 class="text-3xl font-black text-white">HAPPY 2026! 🎆</h2>
+                    <h2 class="text-3xl font-black text-white">HAPPY 2026! </h2>
                     <p class="text-xs text-gray-500 mt-1">Reboot successful. System stable.</p>
                 </div>
                 
